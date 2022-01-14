@@ -27,7 +27,7 @@ provider:
     REGION: 'ap-south-1'
 
 functions:
-  employee-api:
+  api:
     handler: handler.handler
     layers:
       - arn:aws:lambda:ap-south-1:793501393428:layer:Express-DynamoDB-SDK:1

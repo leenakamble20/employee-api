@@ -10,6 +10,12 @@ let emp =await empSrv.getAllEmployees().catch(err=> res.status(500).json('messag
 res.status(200).json(emp);
 })
 
+router.get("/test",async (req,res)=>{
+    // res.status(200).json(await empSrv.getAllEmployees());
+ res.status(200).json('Demo of Code Build');
+ })
+
+ 
 router.post("/",async (req,res)=>{
     // res.status(200).json(await empSrv.getAllEmployees());
  let result =await empSrv.addEmployee(req.body).catch(err=> res.status(500).json('message : Error'));
